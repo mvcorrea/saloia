@@ -59,11 +59,12 @@ export default () => {
   const handleChange = name => event => {
     setUser({ ...user, [name]: event.target.value });
   };
-  const parseDate = (str) => {
-    const birth = new Date(('str').replace(/\s/g, '').split('-').reverse().join('-') + " 00:00").getTime();
-    console.log(birth);
-    return birth;
-  };
+
+  // const parseDate = (str) => {
+  //   const birth = new Date(('str').replace(/\s/g, '').split('-').reverse().join('-') + " 00:00").getTime();
+  //   console.log(birth);
+  //   return birth;
+  // };
 
 
   return (
