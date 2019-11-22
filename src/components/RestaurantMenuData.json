@@ -170,9 +170,17 @@
   {
     "id": 22 ,
     "cat": "Pratos",
-    "scat": "Acompanhamento",
+    "scat": "Acompanhamentos",
     "name": "Baião de Dois",
     "desc": "dose, com queijo e creme de leite",
     "price": 10.0 
+  },
+  {
+    "id": 23 ,
+    "cat": "Pratos",
+    "scat": "Acompanhamentos",
+    "name": "1/2 Baião de Dois",
+    "desc": "dose, com queijo e creme de leite",
+    "price": 7.0 
   }
 ]

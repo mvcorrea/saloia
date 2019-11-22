@@ -14,6 +14,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 //import Divider from '@material-ui/core/Divider';
 
 import { NavLink } from "react-router-dom";
+import logo from './galinho_circulo.svg'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -52,15 +53,32 @@ const useStyles = makeStyles(theme => ({
     color: '#ff6f00',
     //alignSelf: 'flex-end',
   },
-  navbar: {
-    fontFamily: '\'Carter One\', cursive',
-    //color: '#ff6f00',
-    fontSize: 18,
-  },
   sidebar: {
     fontFamily: '\'Carter One\', cursive !important',
     fontSize: 16,
     textDecoration: 'none',
+  },
+  navbar: {
+    fontFamily: '\'Carter One\', cursive',
+    //color: '#ff6f00',
+    fontSize: 22,
+    float: 'left',
+    paddingTop: '4px',
+    paddingLeft: '7px',
+    //marginBottom: '0.8em',
+    //overflow: 'hidden',
+  },
+  logoSmall: {
+    //padding: '0.25em 0.1em',
+    width: '40px',
+    height: '40px',
+    //marginRight: '5%',
+    //marginTop: '10px',
+    //verticalAlign: 'middle',
+    //marginBottom: '0.2em',
+    //paddingBottom: '10px',
+    float: 'left',
+    clear: 'both',
   }
 }));
 
@@ -151,7 +169,10 @@ const Navbar = (menuItens) => {
 
                 </IconButton>
                 <Typography color='inherit'>
-                    <span className={css.navbar}>A Salôia Restaurante  <span style={{color:'yellow'}}>>></span>  {title}</span>
+                    {/* <span className={css.navbar}>A Salôia Restaurante  <span style={{color:'yellow'}}>>></span>  {title}</span> */}
+                
+              <img className={css.logoSmall} src={logo} alt="logo" />
+              <span className={css.navbar}>A Salôia Restaurante</span>
                 </Typography>
             </ToolBar>
           </AppBar>   
